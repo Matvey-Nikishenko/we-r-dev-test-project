@@ -1,0 +1,123 @@
+
+
+// Calendar
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 467px;
+    height: calc(100vh - 150px);
+    // vertical-align: center;
+    background-color: #272829;
+
+    .header-calendar {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+
+        button{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+            font-size: 20px;
+            background-color: #272829;
+            border: none;
+            color: #DFDFDF;
+            cursor: pointer;
+
+            &:focus{
+                outline: none;
+            }
+        }
+        .header-month, .header-year{
+            font-size: 19px;
+            line-height: 23px;
+            color: #DFDFDF;
+            text-transform: uppercase;
+        }
+        .header-month {
+            margin-right: 4px;
+        }
+    }
+    .table {
+        
+        &::before, &::after {
+            content: '';
+            display: block;
+            background-color: #ffffff;
+            height: 1px;
+            width: 285px;
+            margin: 0 auto;
+        }
+    }
+    table {
+        table-layout: fixed;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: auto;
+    }
+    th {
+        vertical-align: middle;
+        text-align: center;
+        height: 36px;
+        font-size: 20px;
+        line-height: 24px;
+        color:#DFDFDF;
+        padding-bottom: 5px;
+    }
+    .day {
+        padding: 10px 10px;
+        vertical-align: middle;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        border: 2px solid transparent;
+        color: #DFDFDF;
+        
+        &:hover {
+            background-color: #eaeaea;
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    .day.selected {
+        border: 2px solid #FDD000;
+    }
+
+    .day.today {
+        background-color: #FDD000;
+        color: white;
+
+        &:hover {
+            background-color: #FDD000;
+        }
+    }
+
+
+    .day.today.selected {
+    border: 2px solid lightgray;
+    }
+}
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+.day.today.selected {
+    border: 2px solid lightgray;
+}
+
+
+
+

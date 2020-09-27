@@ -1,0 +1,33 @@
+
+
+.home-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vh - 150px);
+    .home-page-description{
+        margin-left: auto;
+        margin-right: 50px;
+        width: 518px;
+        text-align: end;
+        .home-page-title {
+            margin: 0;
+            font-size: 50px;
+            line-height: 64px;
+            color:#FDD000;
+        }
+        .home-page-text{
+            font-size: 30px;
+            line-height: 40px;
+            color:#DFDFDF;
+            font-weight: 300;
+        }
+    }
+
+}
